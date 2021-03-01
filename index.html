@@ -1,0 +1,38 @@
+<html>
+<style>
+
+  body {
+    background-color: lightblue;
+    text-align: center;
+  }
+
+  button {
+    background-color:navy;
+    color:white;
+    font-family: "arial";
+    font-size: 20px;
+  }
+
+</style>
+
+<head>
+<title> HTMLCSSJS-SM</title>
+</head>
+
+
+<body>
+
+  <h1>Counter</h1>
+
+  <button type="button" onclick="counter('num')">Add 1</button> <br>
+
+  <var id="num">0</var>
+
+  <script>
+    function counter(id) {
+       document.getElementById(id).innerHTML = Number(document.getElementById(id).innerHTML) + 1;
+    }
+  </script>
+
+</body>
+</html>
